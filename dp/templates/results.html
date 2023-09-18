@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+{% load static %}
+<html style="font-size: 16px;" lang="en"><head>
+  <title>Home</title>
+
+  <link rel="stylesheet" href="{% static 'results.css' %}">
+  <body class="u-body u-xl-mode" data-lang="en">
+      <ul class="nav">
+        <li><a href="\">Home</a></li>
+        <li><a href="\about\">About</a></li>
+      </ul> 
+    <section id="sec-082a">
+      <div>
+        <h1>Results</h1>
+        <h3 class="second">The patient {{ result_text }}</h3>
+        <h3>with a probability of {{ prob_text }}</h3>
+      </div>
+    </section>
+    <div class="footer">
+      <p>.</p>
+    </div>
+</body></html>
